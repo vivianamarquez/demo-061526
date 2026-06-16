@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Vercel Demo</title>
+    <style type="text/css">
+      :root {
+        --bg: #f7f3ea;
+        --card: #ffffff;
+        --text: #232323;
+        --muted: #6b655c;
+        --accent: #146c63;
+        --line: #ded6ca;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .card {
+        width: min(720px, 100%);
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: clamp(24px, 5vw, 44px);
+        box-shadow: 0 18px 50px rgba(35, 35, 35, 0.08);
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 8vw, 4rem);
+      }
+
+      h2 {
+        margin-top: 32px;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 16px;
+        color: var(--accent);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+      }
+
+      code {
+        background: #f1eee7;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        padding: 2px 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <span class="badge">Deploy me on Vercel</span>
+      <h1>Simple Vercel Demo</h1>
+      <p>
+        This is the smallest useful website for explaining a GitHub-to-Vercel
+        deployment. It is just one file: <code>index.html</code>.
+      </p>
+
+      <h2>What you need</h2>
+      <ul>
+        <li>A GitHub account.</li>
+        <li>A Vercel account connected to GitHub.</li>
+        <li>A repository with this <code>index.html</code> file in the root.</li>
+      </ul>
+
+      <h2>How deployment works</h2>
+      <ol>
+        <li>Push this folder to a GitHub repository.</li>
+        <li>In Vercel, choose <strong>New Project</strong>.</li>
+        <li>Import the GitHub repository.</li>
+        <li>Use the default settings and deploy.</li>
+      </ol>
+
+      <p>
+        No framework, no install command, no build command, and no environment
+        variables are needed for this demo.
+      </p>
+    </div>
+  </body>
+</html>
